@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+    <title>Anketa</title>
+</head>
+<body>
+<table cellspacing="2" border="1" cellpadding="5" width="600">
+    <form action="/QuestionsServlet" method="POST">
+        <tr>
+            <td>Enter your name</td>
+            <td><input type="text" name="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Enter your lastname</td>
+            <td><input type="text" name="lastname" placeholder="lastname"></td>
+        </tr>
+        <tr>
+            <td>How old are you?</td>
+            <td>
+                <p><input name="age" type="radio" value="16-20" checked>16-20</p>
+                <p><input name="age" type="radio" value="21-30">21-30</p>
+                <p><input name="age" type="radio" value="30-90">30-90</p>
+            </td>
+        </tr>
+        <tr>
+            <td>What country are you from?</td>
+            <td>
+                <p><input name="country" type="radio" value="Ukraine" checked> Ukraine</p>
+                <p><input name="country" type="radio" value="other"> other </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Ok"/>
+            </td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>
